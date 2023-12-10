@@ -301,10 +301,169 @@ body {
             Banner Part css End
 ==============================================*/
 /* ===========================================
-            Navbar Part css Start
+            About Part css Start
 ==============================================*/
+#about_part {
+  padding: 34px 0 82px;
+  background: var(--primary-bg-color);
+}
+
+.about__title {
+  color: var(--white);
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2.66px;
+  max-width: 518px;
+  position: relative;
+}
+.about__title::after {
+  width: 120px;
+  height: 3px;
+  content: "";
+  background: var(--pink);
+  position: absolute;
+  bottom: 10%;
+  left: 44%;
+}
+.about_body {
+  display: flex;
+  column-gap: 82px;
+  margin-top: 57px;
+}
+
+.about__leftside {
+  position: relative;
+}
+.about__leftsideBorder {
+  position: absolute;
+  top: -1%;
+  left: -1%;
+  width: 163px;
+  height: 157px;
+  background: var(--pink);
+  z-index: -1;
+}
+
+.about__rightside__heading {
+  color: var(--white);
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: 0.81px;
+  margin-bottom: 7px;
+}
+
+.about__listItem {
+  margin-bottom: 10px;
+}
+
+.about__listItem--text {
+  color: var(--white);
+  font-family: var(--Barlow-Condensed);
+  font-size: 18px;
+  font-weight: 400;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.about__listItem--text:hover {
+  color: var(--pink);
+}
+
+.check--mark {
+  color: var(--pink);
+  margin-right: 10px;
+}
+.about__rightside__description {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 13px;
+  margin-bottom: 30px;
+}
+.about__btn {
+  padding: 13px 24px;
+  background: #212121;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 400;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.about__btn:hover {
+  background: var(--pink);
+}
+.about__btn i {
+  margin-left: 7px;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+.counter__item {
+  width: 315px;
+  height: 170px;
+  border-radius: 0px 50px;
+  background: #212121;
+  text-align: center;
+  padding: 26px 0;
+  cursor: pointer;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+
+.counter__item:hover {
+  background: var(--white);
+}
+.counter__item:hover .counter__item__title {
+  color: black;
+}
+.counter__item:hover .counter__item__escription {
+  color: black;
+}
+
+.counter__item__title {
+  color: var(--white);
+  font-family: var(--Barlow-Condensed);
+  font-size: 60px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  margin-bottom: 18px;
+  position: relative;
+}
+.counter__item__title::after {
+  position: absolute;
+  bottom: 16%;
+  right: 29%;
+  width: 12px;
+  height: 12px;
+  content: "";
+  background-color: var(--pink);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.counter__item__escription {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: 0.36px;
+}
+
 /* ===========================================
-            Navbar Part css End
+            About Part css End
 ==============================================*/
 /* ===========================================
             Navbar Part css Start
