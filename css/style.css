@@ -466,10 +466,39 @@ body {
             About Part css End
 ==============================================*/
 /* ===========================================
-            Navbar Part css Start
+            Popular Part css Start
 ==============================================*/
+
+#popular_part {
+  padding: 115px 0 90px;
+  background: var(--secondary-bg-color);
+}
+.popular {
+  display: flex;
+  justify-content: flex-end;
+}
+.popular__title {
+  color: var(--white);
+  text-align: right;
+  font-family: var(--Barlow-Condensed);
+  font-size: 38px;
+  font-weight: 600;
+  letter-spacing: 2.66px;
+  width: 457px;
+  position: relative;
+}
+.popular__title::before {
+  position: absolute;
+  bottom: 9%;
+  right: 28%;
+  width: 105px;
+  height: 3px;
+  content: "";
+  background: var(--pink);
+}
+
 /* ===========================================
-            Navbar Part css End
+            Popular Part css End
 ==============================================*/
 /* ===========================================
             Navbar Part css Start
