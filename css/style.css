@@ -308,7 +308,7 @@ body {
   background: var(--primary-bg-color);
 }
 
-.common_rightpart__title {
+.common_leftpart__title {
   color: var(--white);
   font-size: 38px;
   font-weight: 600;
@@ -316,7 +316,7 @@ body {
   max-width: 518px;
   position: relative;
 }
-.common_rightpart__title::after {
+.common_leftpart__title::after {
   width: 120px;
   height: 3px;
   content: "";
@@ -474,11 +474,11 @@ body {
   padding: 115px 0 90px;
   background: var(--secondary-bg-color);
 }
-.common_leftpart {
+.common_rightpart {
   display: flex;
   justify-content: flex-end;
 }
-.common_leftpart__title {
+.common_rightpart__title {
   color: var(--white);
   text-align: right;
   font-family: var(--Barlow-Condensed);
@@ -488,7 +488,7 @@ body {
   width: 457px;
   position: relative;
 }
-.common_leftpart__title::before {
+.common_rightpart__title::before {
   position: absolute;
   bottom: 9%;
   right: 28%;
@@ -526,4 +526,175 @@ body {
 
 /* ===========================================
             Popular Part css End
+==============================================*/
+
+/* ===========================================
+            Tournament Part css Start
+==============================================*/
+
+#tournament_part {
+  padding: 90px 0;
+  background: var(--primary-bg-color);
+}
+
+.common--live::after {
+  left: 31%;
+}
+
+.tournament__live {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 68px 0 60px;
+}
+.gray--filter {
+  filter: grayscale(1);
+  -webkit-filter: grayscale(1);
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.img--height {
+  width: 427px;
+  height: 275.456px;
+}
+
+.tournament__live__item {
+  position: relative;
+  cursor: pointer;
+}
+
+.tournament__live__item:hover .gray--filter {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  -o-transform: scale(1.04);
+}
+.overlay {
+  position: absolute;
+  bottom: 7%;
+  color: var(--white);
+  padding: 0 25px;
+  width: 100%;
+}
+
+.circle_play {
+  color: var(--white);
+  font-size: 81px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -79%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.overlay__title {
+  font-family: var(--Barlow-Condensed);
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 6px;
+}
+
+.overlay__desciption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.overlay__left {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.96px;
+  padding-bottom: 4px;
+}
+
+.overlay__right {
+  font-size: 16px;
+  font-weight: 400;
+  position: relative;
+}
+.overlay__right::before {
+  background: var(--pink);
+  width: 5px;
+  height: 5px;
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  left: -48%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.match__heading {
+  color: var(--white);
+  font-family: var(--Barlow-Condensed);
+  font-size: 25px;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2.25px;
+  padding-bottom: 50px;
+}
+.match__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.match__box__item {
+  width: 426px;
+  height: 118.052px;
+  background: #212121;
+  display: flex;
+  align-items: center;
+  column-gap: 120px;
+  clip-path: polygon(0 0, 100% 0%, 89% 100%, 0% 100%);
+  cursor: pointer;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.match__box__item:hover {
+  background: var(--pink);
+}
+
+.match__box__item__title {
+  color: var(--white);
+  font-family: var(--Barlow-Condensed);
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.96px;
+}
+
+.matchbox__mid__text {
+  color: var(--white);
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 6px;
+}
+
+.match__box__item--rightside {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 100%);
+}
+
+.match__box__item--righttext {
+  padding-left: 59px;
+}
+
+/* ===========================================
+            Tournament Part css End
 ==============================================*/
