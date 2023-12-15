@@ -927,3 +927,118 @@ body {
 /* ===========================================
             Sale Part css End
 ==============================================*/
+
+/* ===========================================
+            Store Part css Start
+==============================================*/
+
+#store_part {
+  padding: 76px 0 96px;
+  background: var(--primary-bg-color);
+}
+
+.common--accesories::after {
+  left: 44%;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  margin-top: 100px;
+}
+.products__item {
+  width: 315px;
+  height: 465px;
+  background: #212121;
+  padding: 22px 0 24px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.products__item:hover {
+  background: var(--white);
+  color: #000;
+}
+.products__item:hover content {
+  color: var(--white);
+}
+
+.products__item:first-child::after {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  content: "<";
+  padding: 15px;
+  font-size: 58px;
+  border: 1px solid var(--white);
+  background: var(--pink);
+  position: absolute;
+  left: -13%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.products__item:last-child::after {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  content: ">";
+  padding: 15px;
+  font-size: 58px;
+  border: 1px solid var(--white);
+  background: var(--pink);
+  position: absolute;
+  right: -13%;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.item__price {
+  font-size: 40px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+.item__name {
+  padding: 33px 0 7px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.gaming--title {
+  padding-top: 45px;
+}
+.item__cart {
+  color: var(--pink);
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
