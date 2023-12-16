@@ -84,10 +84,30 @@ body {
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
+  position: relative;
 }
 
 .navbar__menu .menu .menu__item a:hover {
   color: var(--pink);
+}
+
+.navbar__menu .menu .menu__item a:hover::after {
+  width: 100%;
+}
+
+.navbar__menu .menu .menu__item a::after {
+  width: 0%;
+  height: 3px;
+  content: "";
+  background: var(--pink);
+  position: absolute;
+  bottom: -2.5px;
+  left: 0;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
 }
 
 .navbar__icons {
@@ -1154,4 +1174,95 @@ body {
 
 /* ===========================================
             Team Part css End
+==============================================*/
+/* ===========================================
+            FAQ Part css Start
+==============================================*/
+
+#faq_part {
+  background: var(--primary-bg-color);
+  padding: 55px 0 91px;
+}
+
+.common--faq {
+  width: 498px;
+  color: #fff;
+  font-family: var(--Barlow-Condensed);
+  letter-spacing: 3.8px;
+}
+
+.common--faq::after {
+  bottom: 9%;
+  left: 74%;
+}
+
+.faq {
+  margin-top: 92px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 163px;
+}
+
+.faq__item {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 42px;
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  padding-bottom: 75px;
+}
+.item--two {
+  border-right: none;
+  justify-content: flex-end;
+}
+.item--three {
+  padding-bottom: 0;
+  padding-top: 75px;
+  border-bottom: none;
+}
+.item--four {
+  padding-bottom: 0;
+  padding-top: 75px;
+  border-right: none;
+  border-bottom: none;
+  justify-content: flex-end;
+}
+
+.faq__count {
+  color: var(--white);
+  background: var(--pink);
+  font-family: var(--Barlow-Condensed);
+  font-size: 38px;
+  font-weight: 600;
+  padding: 17px 30px;
+  align-self: flex-start;
+  margin-top: 7px;
+}
+
+.download__title {
+  color: var(--white);
+  font-family: var(--Barlow-Condensed);
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 11px;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+}
+.faq__item:hover .download__title {
+  color: var(--pink);
+}
+
+.download__summury {
+  color: #666;
+  font-size: 16px;
+  font-weight: 400;
+  width: 427px;
+}
+
+/* ===========================================
+            FAQ Part css End
 ==============================================*/
